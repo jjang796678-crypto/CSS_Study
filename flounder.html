@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <title> 순살 가자미 스테이크 </title>
+    <style> 
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* 카드 */
+        .card{
+            width: 400px;
+            padding: 10px;
+        }
+        .bg{
+            position: relative;
+        }
+        /* 이미지 */
+        .bg img{
+            width: 100%;
+            border-radius: 15px;
+            display: block;
+        }
+        /* 원더 핫딜 */
+.on{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0px;
+    left: 0px;
+}
+        /* 쿠폰 */
+.coupon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(189, 118, 255); 
+    top: 16px; left: 16px; 
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+.coupon p{
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    font-weight: 500; 
+    line-height: 19px;
+}
+        /* 담기 버튼 */
+.cart{
+    width: 100%;
+    padding: 10px ; 
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    border:1px solid #949494;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+}
+        /* 제목 */
+        .hline{
+    font-size: 24px;
+    font-weight: 350;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        }
+        /* 가격 */
+.origin{
+    margin-top: 10px;
+    text-decoration: line-through;
+    color: gray;
+}
+.sale{
+    color: red;
+}
+.now{
+font-weight: bold;
+}
+    /* 리뷰 버튼 */
+    .review{
+    margin-top: 10px;
+    color: gray;
+    }
+    </style>
+</head>
+<body>
+    <!-- 카드  -->
+    <div class="card"> 
+        <!-- 이미지 -->
+        <div class="bg"> 
+            <img src="images/flounder.jpg" alt="순살 가자미">
+            <!-- 원더 핫딜 -->
+        <div class="on"> 
+            <img src="images/wonder_hotdeal.png" alt="원더 핫딜">
+        </div>
+        </div>
+        <!-- 쿠폰 -->
+    <div class="coupon" >
+        <p> +15% 쿠폰 </p>
+    </div>
+        <!-- 버튼 -->
+        <button class="cart"> 
+            <i class="fa-solid fa-cart-shopping"></i> 담기
+        </button>
+        <!-- 제목 -->
+        <h1 class="hline"> 순살 가자미 스테이크 500g (냉동) </h1> 
+        <!-- 가격 -->
+        <div class="price"> 
+        <p class="origin"> 12,900원 </p>
+        <p> 
+            <span class="sale"> 23% </span>
+            <span class="now"> 9,900원 </span>
+        </p>
+        </div>
+        <!-- 리뷰 -->
+        <div class="review"> 
+            <i class="fa-regular fa-comment-dots"></i> 999+ 
+        </div>
+    </div>
+</body>
+</html>

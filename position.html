@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Position 속성 </title>
+    <style> 
+        .box{
+            position: static;
+            /* 기본 상태 */
+            top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box1{
+            /* position: relative;
+            top: 50px;
+            left: 50px; */
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+        }
+        .area{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+        .box2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- static : 기본 상태 -->
+    <div class="box"> </div>
+    <!-- relative : 현재 자기 위치를 기준으로 이동한다. -->
+    <div class="box1"> </div>
+    <!-- absolute : 부모 요소를 기준으로 원하는 위치에 배치 -->
+    <div class="area"> 
+        <div class="box2"> </div>
+    </div>
+
+</body>
+</html>

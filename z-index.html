@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> z-index </title>
+    <style> 
+        .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+        .box1{
+            top: 50px;
+            left: 50px;
+            background-color: red;
+            z-index: 1;
+        }
+        .box2{
+            top: 75px;
+            left: 75px;
+            background-color: rgb(0, 255, 21);
+            z-index: 2;
+        }
+        .box3{
+            top: 100px;
+            left: 100px;
+            background-color: rgb(4, 0, 255);
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- z-index : 겹쳐 있을 때 누가 위에 올지 정하는 값이다  -->
+    <div class="box box1"> 1번 </div>
+    <div class="box box2"> 2번 </div>
+    <div class="box box3"> 3번 </div>
+</body>
+</html>
